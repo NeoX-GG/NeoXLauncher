@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NeoXLauncher.Views
+namespace NeoXLauncher.Executable.Forms
 {
-    public partial class LoginForm : Form
+    public partial class MainForm : Form
     {
-        public LoginForm()
+        public MainForm()
         {
             InitializeComponent();
         }
