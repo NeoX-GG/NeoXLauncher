@@ -9,6 +9,6 @@ namespace NeoXLauncher.Executable.Temp
 {
     public class TempData
     {
-        public static Account Account;
+        public static Account Account = null;
     }
 }

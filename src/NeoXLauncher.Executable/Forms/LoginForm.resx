@@ -117,21 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="SignUpBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHAAAAAgCAYAAADKbvy8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEDSURBVGhD7dstDsJAEMXxlUgkoh8cA4lEIjkGklt0m5Ag
-        kUgkkmMgkUhuMMvM0kP0Jf9fsqS7yJfpq2hTaLIdumzPLpfSD2XdZnvHNft57j2ra5vLqYYX2sGOzVD2
-        /bUspiPMWD/a5j9wNiT/eUSq038Q0Z/Lqhlt5wH6WDJ5kmIKa4DTHmLITlwNkBR1+bPLlgCF0YHiyE4c
-        HSiODhRHB4ojO3F0oDg6UBwdKI7sxNGB4uhAcXSgOLITRweKowPF0YHiyE4cHSiODhRHB4qr2fkYrn0t
-        pzMIabN9UzfaxdeN1+u1xODVbyMiOL+X3j3NVxzGWMaKT5rYz3Pv15/ILKWUfvNksAfbx7LkAAAAAElF
-        TkSuQmCC
-</value>
-  </data>
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TermsCheckBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -143,11 +132,15 @@
         QmCC
 </value>
   </data>
-  <data name="PswConfirmTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="LoginBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAhCAYAAADDLqnYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA2SURBVHhe7cNBEQAgCAAwU5EJUxINoYSv7W4HAAAAAAAA
-        AAAAAAAAAAAAAAAAANaNrNn6Z/YDeJE9flXTp4AAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAHAAAAAgCAYAAADKbvy8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEDSURBVGhD7dstDsJAEMXxlUgkoh8cA4lEIjkGklt0m5Ag
+        kUgkkmMgkUhuMMvM0kP0Jf9fsqS7yJfpq2hTaLIdumzPLpfSD2XdZnvHNft57j2ra5vLqYYX2sGOzVD2
+        /bUspiPMWD/a5j9wNiT/eUSq038Q0Z/Lqhlt5wH6WDJ5kmIKa4DTHmLITlwNkBR1+bPLlgCF0YHiyE4c
+        HSiODhRHB4ojO3F0oDg6UBwdKI7sxNGB4uhAcXSgOLITRweKowPF0YHiyE4cHSiODhRHB4qr2fkYrn0t
+        pzMIabN9UzfaxdeN1+u1xODVbyMiOL+X3j3NVxzGWMaKT5rYz3Pv15/ILKWUfvNksAfbx7LkAAAAAElF
+        TkSuQmCC
 </value>
   </data>
   <data name="PswTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -157,18 +150,11 @@
         AAAAAAAAAAAAAAAAAPzjRtZs3Z/9AAz8M2AC4sRLAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="EmailTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AccountTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAKYAAAAhCAYAAABTPdAXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA3SURBVHhe7cNBEQAgCAAwU5EJUxINaYGP7W4HAAAAAAAA
         AAAAAAAAAAAAAAAAAAA23ciarf/Mfmt8T7RNTnnzAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="AccountTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAI4AAAAhCAYAAAAPt5MzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA1SURBVHhe7cMxDQAwCACwqUITU4k0hgTOHW3SAwAAAAAA
-        AAAAAAAAAAAAAAAAP7qRNVv3sx+U6R8kT/peYAAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>
