@@ -44,7 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.PswTxtBox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AccountTxtBox = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.TermsCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.RememberCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.LoginBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -54,10 +54,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::NeoXLauncher.Executable.Properties.Resources.b4b6ba0af686e534897f4363b46c1a5d;
-            this.pictureBox1.Location = new System.Drawing.Point(327, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(436, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(273, 366);
+            this.pictureBox1.Size = new System.Drawing.Size(364, 450);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -72,10 +72,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Unispace", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(54)))), ((int)(((byte)(104)))));
-            this.label2.Location = new System.Drawing.Point(49, 18);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(65, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(228, 77);
+            this.label2.Size = new System.Drawing.Size(285, 96);
             this.label2.TabIndex = 11;
             this.label2.Text = "Login";
             // 
@@ -107,8 +106,8 @@
             this.PswTxtBox.IconRight = null;
             this.PswTxtBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.PswTxtBox.Lines = new string[0];
-            this.PswTxtBox.Location = new System.Drawing.Point(171, 155);
-            this.PswTxtBox.Margin = new System.Windows.Forms.Padding(2);
+            this.PswTxtBox.Location = new System.Drawing.Point(228, 191);
+            this.PswTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PswTxtBox.MaxLength = 32767;
             this.PswTxtBox.MinimumSize = new System.Drawing.Size(1, 1);
             this.PswTxtBox.Modified = false;
@@ -134,7 +133,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(54)))), ((int)(((byte)(104)))));
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.PswTxtBox.OnIdleState = stateProperties4;
-            this.PswTxtBox.Padding = new System.Windows.Forms.Padding(2);
+            this.PswTxtBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PswTxtBox.PasswordChar = '●';
             this.PswTxtBox.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.PswTxtBox.PlaceholderText = "Password";
@@ -144,7 +143,7 @@
             this.PswTxtBox.SelectionLength = 0;
             this.PswTxtBox.SelectionStart = 0;
             this.PswTxtBox.ShortcutsEnabled = true;
-            this.PswTxtBox.Size = new System.Drawing.Size(152, 33);
+            this.PswTxtBox.Size = new System.Drawing.Size(203, 41);
             this.PswTxtBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.PswTxtBox.TabIndex = 10;
             this.PswTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -183,8 +182,8 @@
             this.AccountTxtBox.IconRight = null;
             this.AccountTxtBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AccountTxtBox.Lines = new string[0];
-            this.AccountTxtBox.Location = new System.Drawing.Point(1, 155);
-            this.AccountTxtBox.Margin = new System.Windows.Forms.Padding(2);
+            this.AccountTxtBox.Location = new System.Drawing.Point(1, 191);
+            this.AccountTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AccountTxtBox.MaxLength = 32767;
             this.AccountTxtBox.MinimumSize = new System.Drawing.Size(1, 1);
             this.AccountTxtBox.Modified = false;
@@ -210,7 +209,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(54)))), ((int)(((byte)(104)))));
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AccountTxtBox.OnIdleState = stateProperties8;
-            this.AccountTxtBox.Padding = new System.Windows.Forms.Padding(2);
+            this.AccountTxtBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AccountTxtBox.PasswordChar = '\0';
             this.AccountTxtBox.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AccountTxtBox.PlaceholderText = "Account name\r\n";
@@ -220,7 +219,7 @@
             this.AccountTxtBox.SelectionLength = 0;
             this.AccountTxtBox.SelectionStart = 0;
             this.AccountTxtBox.ShortcutsEnabled = true;
-            this.AccountTxtBox.Size = new System.Drawing.Size(166, 33);
+            this.AccountTxtBox.Size = new System.Drawing.Size(221, 41);
             this.AccountTxtBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.AccountTxtBox.TabIndex = 9;
             this.AccountTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -231,59 +230,59 @@
             this.AccountTxtBox.UseSystemPasswordChar = false;
             this.AccountTxtBox.WordWrap = true;
             // 
-            // TermsCheckBox
+            // RememberCheckBox
             // 
-            this.TermsCheckBox.AllowBindingControlAnimation = true;
-            this.TermsCheckBox.AllowBindingControlColorChanges = false;
-            this.TermsCheckBox.AllowBindingControlLocation = true;
-            this.TermsCheckBox.AllowCheckBoxAnimation = false;
-            this.TermsCheckBox.AllowCheckmarkAnimation = true;
-            this.TermsCheckBox.AllowOnHoverStates = true;
-            this.TermsCheckBox.AutoCheck = true;
-            this.TermsCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.TermsCheckBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TermsCheckBox.BackgroundImage")));
-            this.TermsCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.TermsCheckBox.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.TermsCheckBox.BorderRadius = 12;
-            this.TermsCheckBox.Checked = false;
-            this.TermsCheckBox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
-            this.TermsCheckBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.TermsCheckBox.CustomCheckmarkImage = null;
-            this.TermsCheckBox.Location = new System.Drawing.Point(4, 240);
-            this.TermsCheckBox.Margin = new System.Windows.Forms.Padding(2);
-            this.TermsCheckBox.MinimumSize = new System.Drawing.Size(13, 14);
-            this.TermsCheckBox.Name = "TermsCheckBox";
-            this.TermsCheckBox.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.TermsCheckBox.OnCheck.BorderRadius = 12;
-            this.TermsCheckBox.OnCheck.BorderThickness = 2;
-            this.TermsCheckBox.OnCheck.CheckBoxColor = System.Drawing.Color.DodgerBlue;
-            this.TermsCheckBox.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.TermsCheckBox.OnCheck.CheckmarkThickness = 2;
-            this.TermsCheckBox.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.TermsCheckBox.OnDisable.BorderRadius = 12;
-            this.TermsCheckBox.OnDisable.BorderThickness = 2;
-            this.TermsCheckBox.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.TermsCheckBox.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.TermsCheckBox.OnDisable.CheckmarkThickness = 2;
-            this.TermsCheckBox.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.TermsCheckBox.OnHoverChecked.BorderRadius = 12;
-            this.TermsCheckBox.OnHoverChecked.BorderThickness = 2;
-            this.TermsCheckBox.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.TermsCheckBox.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.TermsCheckBox.OnHoverChecked.CheckmarkThickness = 2;
-            this.TermsCheckBox.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.TermsCheckBox.OnHoverUnchecked.BorderRadius = 12;
-            this.TermsCheckBox.OnHoverUnchecked.BorderThickness = 1;
-            this.TermsCheckBox.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.TermsCheckBox.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
-            this.TermsCheckBox.OnUncheck.BorderRadius = 12;
-            this.TermsCheckBox.OnUncheck.BorderThickness = 1;
-            this.TermsCheckBox.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.TermsCheckBox.Size = new System.Drawing.Size(16, 16);
-            this.TermsCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
-            this.TermsCheckBox.TabIndex = 13;
-            this.TermsCheckBox.ThreeState = false;
-            this.TermsCheckBox.ToolTipText = null;
+            this.RememberCheckBox.AllowBindingControlAnimation = true;
+            this.RememberCheckBox.AllowBindingControlColorChanges = false;
+            this.RememberCheckBox.AllowBindingControlLocation = true;
+            this.RememberCheckBox.AllowCheckBoxAnimation = false;
+            this.RememberCheckBox.AllowCheckmarkAnimation = true;
+            this.RememberCheckBox.AllowOnHoverStates = true;
+            this.RememberCheckBox.AutoCheck = true;
+            this.RememberCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.RememberCheckBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RememberCheckBox.BackgroundImage")));
+            this.RememberCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.RememberCheckBox.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.RememberCheckBox.BorderRadius = 12;
+            this.RememberCheckBox.Checked = false;
+            this.RememberCheckBox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
+            this.RememberCheckBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.RememberCheckBox.CustomCheckmarkImage = null;
+            this.RememberCheckBox.Location = new System.Drawing.Point(5, 295);
+            this.RememberCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RememberCheckBox.MinimumSize = new System.Drawing.Size(17, 17);
+            this.RememberCheckBox.Name = "RememberCheckBox";
+            this.RememberCheckBox.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.RememberCheckBox.OnCheck.BorderRadius = 12;
+            this.RememberCheckBox.OnCheck.BorderThickness = 2;
+            this.RememberCheckBox.OnCheck.CheckBoxColor = System.Drawing.Color.DodgerBlue;
+            this.RememberCheckBox.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.RememberCheckBox.OnCheck.CheckmarkThickness = 2;
+            this.RememberCheckBox.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.RememberCheckBox.OnDisable.BorderRadius = 12;
+            this.RememberCheckBox.OnDisable.BorderThickness = 2;
+            this.RememberCheckBox.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.RememberCheckBox.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.RememberCheckBox.OnDisable.CheckmarkThickness = 2;
+            this.RememberCheckBox.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.RememberCheckBox.OnHoverChecked.BorderRadius = 12;
+            this.RememberCheckBox.OnHoverChecked.BorderThickness = 2;
+            this.RememberCheckBox.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.RememberCheckBox.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.RememberCheckBox.OnHoverChecked.CheckmarkThickness = 2;
+            this.RememberCheckBox.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.RememberCheckBox.OnHoverUnchecked.BorderRadius = 12;
+            this.RememberCheckBox.OnHoverUnchecked.BorderThickness = 1;
+            this.RememberCheckBox.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.RememberCheckBox.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
+            this.RememberCheckBox.OnUncheck.BorderRadius = 12;
+            this.RememberCheckBox.OnUncheck.BorderThickness = 1;
+            this.RememberCheckBox.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.RememberCheckBox.Size = new System.Drawing.Size(21, 21);
+            this.RememberCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Round;
+            this.RememberCheckBox.TabIndex = 13;
+            this.RememberCheckBox.ThreeState = false;
+            this.RememberCheckBox.ToolTipText = null;
             // 
             // LoginBtn
             // 
@@ -332,8 +331,8 @@
             this.LoginBtn.IdleIconLeftImage = null;
             this.LoginBtn.IdleIconRightImage = null;
             this.LoginBtn.IndicateFocus = false;
-            this.LoginBtn.Location = new System.Drawing.Point(103, 294);
-            this.LoginBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.LoginBtn.Location = new System.Drawing.Point(137, 362);
+            this.LoginBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.LoginBtn.OnDisabledState.BorderRadius = 5;
@@ -367,23 +366,23 @@
             this.LoginBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.LoginBtn.OnPressedState.IconLeftImage = null;
             this.LoginBtn.OnPressedState.IconRightImage = null;
-            this.LoginBtn.Size = new System.Drawing.Size(112, 32);
+            this.LoginBtn.Size = new System.Drawing.Size(149, 39);
             this.LoginBtn.TabIndex = 12;
             this.LoginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LoginBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.LoginBtn.TextMarginLeft = 0;
             this.LoginBtn.TextPadding = new System.Windows.Forms.Padding(0);
             this.LoginBtn.UseDefaultRadiusAndThickness = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(24, 239);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(32, 294);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 20);
+            this.label1.Size = new System.Drawing.Size(139, 25);
             this.label1.TabIndex = 14;
             this.label1.Text = "Remember me";
             // 
@@ -392,21 +391,22 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.ForeColor = System.Drawing.Color.Silver;
             this.linkLabel1.LinkColor = System.Drawing.Color.Silver;
-            this.linkLabel1.Location = new System.Drawing.Point(110, 197);
+            this.linkLabel1.Location = new System.Drawing.Point(147, 242);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(114, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(144, 16);
             this.linkLabel1.TabIndex = 15;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot your password?";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.TermsCheckBox);
+            this.Controls.Add(this.RememberCheckBox);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -414,7 +414,7 @@
             this.Controls.Add(this.PswTxtBox);
             this.Controls.Add(this.AccountTxtBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NeoX Login";
@@ -432,7 +432,7 @@
         private Bunifu.UI.WinForms.BunifuTextBox PswTxtBox;
         private Bunifu.UI.WinForms.BunifuTextBox AccountTxtBox;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private Bunifu.UI.WinForms.BunifuCheckBox TermsCheckBox;
+        private Bunifu.UI.WinForms.BunifuCheckBox RememberCheckBox;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton LoginBtn;
         private System.Windows.Forms.Label label1;
     }

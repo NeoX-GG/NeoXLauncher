@@ -38,9 +38,6 @@ namespace NeoXLauncher.Executable.Forms
 
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
-            Hide();
-            new LoginForm().Show();
-            return;
             if (TermsCheckBox.CheckState.Equals(CheckState.Checked))
             {
                 if (PswTxtBox.Text.Equals(PswConfirmTxtBox.Text))
