@@ -14,8 +14,6 @@ namespace NeoXLauncher.Executable.Forms
 {
     public partial class RegisterForm : Form
     {
-        string Psw = "";
-        string ConfirmPsw = "";
         public RegisterForm()
         {
             InitializeComponent();
@@ -61,8 +59,9 @@ namespace NeoXLauncher.Executable.Forms
             //TODO: Message Agree Terms
         }
 
-        private void PswTxtBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void CloseBtn_Click(object sender, EventArgs e)
         {
+            Environment.Exit(1);
         }
     }
 }

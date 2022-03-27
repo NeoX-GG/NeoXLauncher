@@ -50,5 +50,10 @@ namespace NeoXLauncher.Executable.Forms
                 }
             }
         }
+
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }
     }
 }
