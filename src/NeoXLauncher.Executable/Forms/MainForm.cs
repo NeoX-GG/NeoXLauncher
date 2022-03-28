@@ -14,6 +14,7 @@ namespace NeoXLauncher.Executable.Forms
     public partial class MainForm : Form
     {
         ProfileForm ProfForm = new ProfileForm();
+        NewsForm NewForm = new NewsForm();
         public MainForm()
         {
             InitializeComponent();
@@ -32,13 +33,22 @@ namespace NeoXLauncher.Executable.Forms
         private void MainForm_Load(object sender, EventArgs e)
         {
             ProfForm.TopLevel = false;
+            NewForm.TopLevel = false;
             BigPanel.Controls.Add(ProfForm);
+            BigPanel.Controls.Add(NewForm);
         }
 
-        private void SignUpBtn_Click(object sender, EventArgs e)
+        private void ProfileBtn_Click(object sender, EventArgs e)
         {
             //TODO: All forms closed
             ProfForm.Visible = !ProfForm.Visible;
+            NewForm.Visible = false;
+        }
+
+        private void NewsBtn_Click(object sender, EventArgs e)
+        {
+            NewForm.Visible = !NewForm.Visible;
+            ProfForm.Visible = false;
         }
     }
 }

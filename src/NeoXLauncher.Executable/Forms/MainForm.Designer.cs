@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.BigPanel = new System.Windows.Forms.Panel();
             this.LeftPanel = new System.Windows.Forms.Panel();
+            this.ProfileBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.TopPanel = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.CloseBtn = new System.Windows.Forms.PictureBox();
             this.MenuBtn = new System.Windows.Forms.PictureBox();
-            this.SignUpBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.NewsBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.LeftPanel.SuspendLayout();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
@@ -55,13 +57,106 @@
             // LeftPanel
             // 
             this.LeftPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LeftPanel.Controls.Add(this.SignUpBtn);
+            this.LeftPanel.Controls.Add(this.NewsBtn);
+            this.LeftPanel.Controls.Add(this.ProfileBtn);
             this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftPanel.Location = new System.Drawing.Point(0, 106);
             this.LeftPanel.Name = "LeftPanel";
             this.LeftPanel.Size = new System.Drawing.Size(276, 794);
             this.LeftPanel.TabIndex = 0;
             this.LeftPanel.Visible = false;
+            // 
+            // ProfileBtn
+            // 
+            this.ProfileBtn.AllowAnimations = true;
+            this.ProfileBtn.AllowMouseEffects = true;
+            this.ProfileBtn.AllowToggling = false;
+            this.ProfileBtn.AnimationSpeed = 200;
+            this.ProfileBtn.AutoGenerateColors = false;
+            this.ProfileBtn.AutoRoundBorders = false;
+            this.ProfileBtn.AutoSizeLeftIcon = true;
+            this.ProfileBtn.AutoSizeRightIcon = true;
+            this.ProfileBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ProfileBtn.BackColor1 = System.Drawing.Color.Transparent;
+            this.ProfileBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfileBtn.BackgroundImage")));
+            this.ProfileBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.ProfileBtn.ButtonText = "Profile";
+            this.ProfileBtn.ButtonTextMarginLeft = 0;
+            this.ProfileBtn.ColorContrastOnClick = 45;
+            this.ProfileBtn.ColorContrastOnHover = 45;
+            this.ProfileBtn.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.ProfileBtn.CustomizableEdges = borderEdges2;
+            this.ProfileBtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ProfileBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.ProfileBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.ProfileBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.ProfileBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Idle;
+            this.ProfileBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ProfileBtn.ForeColor = System.Drawing.Color.Silver;
+            this.ProfileBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ProfileBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.ProfileBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.ProfileBtn.IconMarginLeft = 11;
+            this.ProfileBtn.IconPadding = 10;
+            this.ProfileBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ProfileBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.ProfileBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.ProfileBtn.IconSize = 25;
+            this.ProfileBtn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.ProfileBtn.IdleBorderRadius = 5;
+            this.ProfileBtn.IdleBorderThickness = 1;
+            this.ProfileBtn.IdleFillColor = System.Drawing.Color.Transparent;
+            this.ProfileBtn.IdleIconLeftImage = global::NeoXLauncher.Executable.Properties.Resources.Close;
+            this.ProfileBtn.IdleIconRightImage = null;
+            this.ProfileBtn.IndicateFocus = false;
+            this.ProfileBtn.Location = new System.Drawing.Point(0, 0);
+            this.ProfileBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProfileBtn.Name = "ProfileBtn";
+            this.ProfileBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.ProfileBtn.OnDisabledState.BorderRadius = 5;
+            this.ProfileBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ProfileBtn.OnDisabledState.BorderThickness = 0;
+            this.ProfileBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.ProfileBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.ProfileBtn.OnDisabledState.IconLeftImage = null;
+            this.ProfileBtn.OnDisabledState.IconRightImage = null;
+            this.ProfileBtn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(74)))), ((int)(((byte)(167)))));
+            this.ProfileBtn.onHoverState.BorderRadius = 5;
+            this.ProfileBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ProfileBtn.onHoverState.BorderThickness = 0;
+            this.ProfileBtn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(74)))), ((int)(((byte)(167)))));
+            this.ProfileBtn.onHoverState.ForeColor = System.Drawing.Color.Silver;
+            this.ProfileBtn.onHoverState.IconLeftImage = null;
+            this.ProfileBtn.onHoverState.IconRightImage = null;
+            this.ProfileBtn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ProfileBtn.OnIdleState.BorderRadius = 5;
+            this.ProfileBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.ProfileBtn.OnIdleState.BorderThickness = 0;
+            this.ProfileBtn.OnIdleState.FillColor = System.Drawing.Color.Transparent;
+            this.ProfileBtn.OnIdleState.ForeColor = System.Drawing.Color.Silver;
+            this.ProfileBtn.OnIdleState.IconLeftImage = global::NeoXLauncher.Executable.Properties.Resources.Close;
+            this.ProfileBtn.OnIdleState.IconRightImage = null;
+            this.ProfileBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(54)))), ((int)(((byte)(104)))));
+            this.ProfileBtn.OnPressedState.BorderRadius = 5;
+            this.ProfileBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ProfileBtn.OnPressedState.BorderThickness = 0;
+            this.ProfileBtn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(54)))), ((int)(((byte)(104)))));
+            this.ProfileBtn.OnPressedState.ForeColor = System.Drawing.Color.Silver;
+            this.ProfileBtn.OnPressedState.IconLeftImage = null;
+            this.ProfileBtn.OnPressedState.IconRightImage = null;
+            this.ProfileBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ProfileBtn.Size = new System.Drawing.Size(276, 65);
+            this.ProfileBtn.TabIndex = 2;
+            this.ProfileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ProfileBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ProfileBtn.TextMarginLeft = 0;
+            this.ProfileBtn.TextPadding = new System.Windows.Forms.Padding(0);
+            this.ProfileBtn.UseDefaultRadiusAndThickness = true;
+            this.ProfileBtn.Click += new System.EventHandler(this.ProfileBtn_Click);
             // 
             // TopPanel
             // 
@@ -73,11 +168,6 @@
             this.TopPanel.Name = "TopPanel";
             this.TopPanel.Size = new System.Drawing.Size(1440, 106);
             this.TopPanel.TabIndex = 1;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 50;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // CloseBtn
             // 
@@ -103,97 +193,102 @@
             this.MenuBtn.TabStop = false;
             this.MenuBtn.Click += new System.EventHandler(this.MenuBtn_Click);
             // 
-            // SignUpBtn
+            // bunifuElipse1
             // 
-            this.SignUpBtn.AllowAnimations = true;
-            this.SignUpBtn.AllowMouseEffects = true;
-            this.SignUpBtn.AllowToggling = false;
-            this.SignUpBtn.AnimationSpeed = 200;
-            this.SignUpBtn.AutoGenerateColors = false;
-            this.SignUpBtn.AutoRoundBorders = false;
-            this.SignUpBtn.AutoSizeLeftIcon = true;
-            this.SignUpBtn.AutoSizeRightIcon = true;
-            this.SignUpBtn.BackColor = System.Drawing.Color.Transparent;
-            this.SignUpBtn.BackColor1 = System.Drawing.Color.Transparent;
-            this.SignUpBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SignUpBtn.BackgroundImage")));
-            this.SignUpBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
-            this.SignUpBtn.ButtonText = "Profile";
-            this.SignUpBtn.ButtonTextMarginLeft = 0;
-            this.SignUpBtn.ColorContrastOnClick = 45;
-            this.SignUpBtn.ColorContrastOnHover = 45;
-            this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuElipse1.ElipseRadius = 50;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // NewsBtn
+            // 
+            this.NewsBtn.AllowAnimations = true;
+            this.NewsBtn.AllowMouseEffects = true;
+            this.NewsBtn.AllowToggling = false;
+            this.NewsBtn.AnimationSpeed = 200;
+            this.NewsBtn.AutoGenerateColors = false;
+            this.NewsBtn.AutoRoundBorders = false;
+            this.NewsBtn.AutoSizeLeftIcon = true;
+            this.NewsBtn.AutoSizeRightIcon = true;
+            this.NewsBtn.BackColor = System.Drawing.Color.Transparent;
+            this.NewsBtn.BackColor1 = System.Drawing.Color.Transparent;
+            this.NewsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NewsBtn.BackgroundImage")));
+            this.NewsBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.NewsBtn.ButtonText = "News";
+            this.NewsBtn.ButtonTextMarginLeft = 0;
+            this.NewsBtn.ColorContrastOnClick = 45;
+            this.NewsBtn.ColorContrastOnHover = 45;
+            this.NewsBtn.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
-            this.SignUpBtn.CustomizableEdges = borderEdges1;
-            this.SignUpBtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.SignUpBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.SignUpBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.SignUpBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.SignUpBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Idle;
-            this.SignUpBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SignUpBtn.ForeColor = System.Drawing.Color.Silver;
-            this.SignUpBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SignUpBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.SignUpBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.SignUpBtn.IconMarginLeft = 11;
-            this.SignUpBtn.IconPadding = 10;
-            this.SignUpBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SignUpBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.SignUpBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.SignUpBtn.IconSize = 25;
-            this.SignUpBtn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.SignUpBtn.IdleBorderRadius = 5;
-            this.SignUpBtn.IdleBorderThickness = 1;
-            this.SignUpBtn.IdleFillColor = System.Drawing.Color.Transparent;
-            this.SignUpBtn.IdleIconLeftImage = global::NeoXLauncher.Executable.Properties.Resources.Close;
-            this.SignUpBtn.IdleIconRightImage = null;
-            this.SignUpBtn.IndicateFocus = false;
-            this.SignUpBtn.Location = new System.Drawing.Point(0, 0);
-            this.SignUpBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SignUpBtn.Name = "SignUpBtn";
-            this.SignUpBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.SignUpBtn.OnDisabledState.BorderRadius = 5;
-            this.SignUpBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.SignUpBtn.OnDisabledState.BorderThickness = 0;
-            this.SignUpBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.SignUpBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.SignUpBtn.OnDisabledState.IconLeftImage = null;
-            this.SignUpBtn.OnDisabledState.IconRightImage = null;
-            this.SignUpBtn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(74)))), ((int)(((byte)(167)))));
-            this.SignUpBtn.onHoverState.BorderRadius = 5;
-            this.SignUpBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.SignUpBtn.onHoverState.BorderThickness = 0;
-            this.SignUpBtn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(74)))), ((int)(((byte)(167)))));
-            this.SignUpBtn.onHoverState.ForeColor = System.Drawing.Color.Silver;
-            this.SignUpBtn.onHoverState.IconLeftImage = null;
-            this.SignUpBtn.onHoverState.IconRightImage = null;
-            this.SignUpBtn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.SignUpBtn.OnIdleState.BorderRadius = 5;
-            this.SignUpBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
-            this.SignUpBtn.OnIdleState.BorderThickness = 0;
-            this.SignUpBtn.OnIdleState.FillColor = System.Drawing.Color.Transparent;
-            this.SignUpBtn.OnIdleState.ForeColor = System.Drawing.Color.Silver;
-            this.SignUpBtn.OnIdleState.IconLeftImage = global::NeoXLauncher.Executable.Properties.Resources.Close;
-            this.SignUpBtn.OnIdleState.IconRightImage = null;
-            this.SignUpBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(54)))), ((int)(((byte)(104)))));
-            this.SignUpBtn.OnPressedState.BorderRadius = 5;
-            this.SignUpBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.SignUpBtn.OnPressedState.BorderThickness = 0;
-            this.SignUpBtn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(54)))), ((int)(((byte)(104)))));
-            this.SignUpBtn.OnPressedState.ForeColor = System.Drawing.Color.Silver;
-            this.SignUpBtn.OnPressedState.IconLeftImage = null;
-            this.SignUpBtn.OnPressedState.IconRightImage = null;
-            this.SignUpBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.SignUpBtn.Size = new System.Drawing.Size(276, 65);
-            this.SignUpBtn.TabIndex = 2;
-            this.SignUpBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SignUpBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.SignUpBtn.TextMarginLeft = 0;
-            this.SignUpBtn.TextPadding = new System.Windows.Forms.Padding(0);
-            this.SignUpBtn.UseDefaultRadiusAndThickness = true;
-            this.SignUpBtn.Click += new System.EventHandler(this.SignUpBtn_Click);
+            this.NewsBtn.CustomizableEdges = borderEdges1;
+            this.NewsBtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.NewsBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.NewsBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.NewsBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.NewsBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Idle;
+            this.NewsBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.NewsBtn.ForeColor = System.Drawing.Color.Silver;
+            this.NewsBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NewsBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.NewsBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.NewsBtn.IconMarginLeft = 11;
+            this.NewsBtn.IconPadding = 10;
+            this.NewsBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NewsBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.NewsBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.NewsBtn.IconSize = 25;
+            this.NewsBtn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.NewsBtn.IdleBorderRadius = 5;
+            this.NewsBtn.IdleBorderThickness = 1;
+            this.NewsBtn.IdleFillColor = System.Drawing.Color.Transparent;
+            this.NewsBtn.IdleIconLeftImage = global::NeoXLauncher.Executable.Properties.Resources.Close;
+            this.NewsBtn.IdleIconRightImage = null;
+            this.NewsBtn.IndicateFocus = false;
+            this.NewsBtn.Location = new System.Drawing.Point(-1, 65);
+            this.NewsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.NewsBtn.Name = "NewsBtn";
+            this.NewsBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.NewsBtn.OnDisabledState.BorderRadius = 5;
+            this.NewsBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.NewsBtn.OnDisabledState.BorderThickness = 0;
+            this.NewsBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.NewsBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.NewsBtn.OnDisabledState.IconLeftImage = null;
+            this.NewsBtn.OnDisabledState.IconRightImage = null;
+            this.NewsBtn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(74)))), ((int)(((byte)(167)))));
+            this.NewsBtn.onHoverState.BorderRadius = 5;
+            this.NewsBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.NewsBtn.onHoverState.BorderThickness = 0;
+            this.NewsBtn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(74)))), ((int)(((byte)(167)))));
+            this.NewsBtn.onHoverState.ForeColor = System.Drawing.Color.Silver;
+            this.NewsBtn.onHoverState.IconLeftImage = null;
+            this.NewsBtn.onHoverState.IconRightImage = null;
+            this.NewsBtn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.NewsBtn.OnIdleState.BorderRadius = 5;
+            this.NewsBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.NewsBtn.OnIdleState.BorderThickness = 0;
+            this.NewsBtn.OnIdleState.FillColor = System.Drawing.Color.Transparent;
+            this.NewsBtn.OnIdleState.ForeColor = System.Drawing.Color.Silver;
+            this.NewsBtn.OnIdleState.IconLeftImage = global::NeoXLauncher.Executable.Properties.Resources.Close;
+            this.NewsBtn.OnIdleState.IconRightImage = null;
+            this.NewsBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(54)))), ((int)(((byte)(104)))));
+            this.NewsBtn.OnPressedState.BorderRadius = 5;
+            this.NewsBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.NewsBtn.OnPressedState.BorderThickness = 0;
+            this.NewsBtn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(54)))), ((int)(((byte)(104)))));
+            this.NewsBtn.OnPressedState.ForeColor = System.Drawing.Color.Silver;
+            this.NewsBtn.OnPressedState.IconLeftImage = null;
+            this.NewsBtn.OnPressedState.IconRightImage = null;
+            this.NewsBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.NewsBtn.Size = new System.Drawing.Size(276, 65);
+            this.NewsBtn.TabIndex = 3;
+            this.NewsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NewsBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NewsBtn.TextMarginLeft = 0;
+            this.NewsBtn.TextPadding = new System.Windows.Forms.Padding(0);
+            this.NewsBtn.UseDefaultRadiusAndThickness = true;
+            this.NewsBtn.Click += new System.EventHandler(this.NewsBtn_Click);
             // 
             // MainForm
             // 
@@ -225,6 +320,7 @@
         private System.Windows.Forms.PictureBox MenuBtn;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.PictureBox CloseBtn;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton SignUpBtn;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton ProfileBtn;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton NewsBtn;
     }
 }

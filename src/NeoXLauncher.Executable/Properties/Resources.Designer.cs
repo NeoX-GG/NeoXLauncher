@@ -83,9 +83,9 @@ namespace NeoXLauncher.Executable.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CloseCross {
+        internal static System.Drawing.Bitmap Flecha {
             get {
-                object obj = ResourceManager.GetObject("CloseCross", resourceCulture);
+                object obj = ResourceManager.GetObject("Flecha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace NeoXLauncher.Executable.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cross {
+        internal static System.Drawing.Bitmap Flecha_invertida {
             get {
-                object obj = ResourceManager.GetObject("cross", resourceCulture);
+                object obj = ResourceManager.GetObject("Flecha invertida", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
