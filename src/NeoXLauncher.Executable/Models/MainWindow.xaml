@@ -33,7 +33,6 @@
         </StackPanel>
 
         <StackPanel Name="WindowStackPanel" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.ColumnSpan="2">
-            <Image Name="CloseButton" Source="../Images/Close.png" Height="15" Width="15" Margin="10,10,10,0" MouseLeftButtonDown="HomeButton_MouseLeftButtonDown"/>
         </StackPanel>
     </Grid>
 </Window>
