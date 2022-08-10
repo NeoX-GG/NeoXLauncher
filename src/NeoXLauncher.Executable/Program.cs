@@ -12,7 +12,7 @@ namespace NeoXLauncher.Executable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DownloadForm());
+            Application.Run(new LoginForm());
         }
     }
 }

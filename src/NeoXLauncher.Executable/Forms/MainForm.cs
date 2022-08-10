@@ -40,6 +40,7 @@ namespace NeoXLauncher.Executable.Forms
 
         private void ProfileBtn_Click(object sender, EventArgs e)
         {
+            LeftPanel.Visible = !LeftPanel.Visible;
             //TODO: All forms closed
             ProfForm.Visible = !ProfForm.Visible;
             NewForm.Visible = false;
@@ -47,6 +48,8 @@ namespace NeoXLauncher.Executable.Forms
 
         private void NewsBtn_Click(object sender, EventArgs e)
         {
+            LeftPanel.Visible = !LeftPanel.Visible;
+            //TODO: All forms closed
             NewForm.Visible = !NewForm.Visible;
             ProfForm.Visible = false;
         }

@@ -249,12 +249,6 @@
     <None Include="Resources\b4b6ba0af686e534897f4363b46c1a5d.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cross.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CloseCross.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Close.png" />
   </ItemGroup>
   <ItemGroup>
@@ -262,9 +256,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Save.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Flecha.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Flecha1.png" />

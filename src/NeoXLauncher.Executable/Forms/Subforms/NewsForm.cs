@@ -20,7 +20,7 @@ namespace NeoXLauncher.Executable.Forms.Subforms
 
         public void UpdateNewsView()
         {
-            NewsBrowser.Url = new Uri($"https://neox.gg/News/new{NewId}.html");
+            //NewsBrowser.Url = new Uri($"https://neox.gg/News/new{NewId}.html");
         }
 
         private void BackNewsBtn_Click(object sender, EventArgs e)
