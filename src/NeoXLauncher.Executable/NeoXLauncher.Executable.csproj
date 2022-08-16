@@ -16,7 +16,37 @@
     <None Remove="Images\Home.png" />
     <None Remove="Images\NeoX.png" />
     <None Remove="Images\News.png" />
+    <None Remove="Images\News\New1.png" />
+    <None Remove="Images\News\New2.png" />
+    <None Remove="Images\News\New3.png" />
+    <None Remove="Images\News\New4.png" />
+    <None Remove="Images\News\New5.png" />
+    <None Remove="Images\News\New6.png" />
     <None Remove="Images\Password.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\News\New5.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\News\New4.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\News\New3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\News\New1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +63,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\News.png" />
+    <Resource Include="Images\News\New2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\News\New6.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\Password.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

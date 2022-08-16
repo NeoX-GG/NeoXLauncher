@@ -28,18 +28,28 @@ public partial class MainWindow : Window
 
     private void HomeButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
-        HomeWindow login = new();
+        HomeWindow window = new();
         WindowStackPanel.Children.Clear();
 
-        object content = login.Content;
-        login.Content = null;
-        login.Close();
+        object content = window.Content;
+        window.Content = null;
+        window.Close();
         WindowStackPanel.Children.Add(content as UIElement);
     }
 
     private void NewsButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
+#if DEBUG
+        NewsWindow window = new();
+        WindowStackPanel.Children.Clear();
 
+        object content = window.Content;
+        window.Content = null;
+        window.Close();
+        WindowStackPanel.Children.Add(content as UIElement);
+        return;
+#endif
+        MessageBox.Show("In development");
     }
 
     private void AccountButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
