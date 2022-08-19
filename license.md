@@ -1,0 +1,5 @@
+OWNERSHIP OF WORK PRODUCT AND INTELLECTUAL PROPERTY
+
+Upon Freelancer’s receipt of full payment from Client, the Work Product, including without limitation all Intellectual Property Rights in the Work Product, will be the sole and exclusive property of Client, and Client will be deemed to be the author thereof. If Freelancer has any Intellectual Property Rights to the Work Product that are not owned by Client upon Freelancer’s receipt of payment from Client, Freelancer hereby automatically irrevocably assigns to Client all right, title and interest worldwide in and to such Intellectual Property Rights. Except as set forth above, Freelancer retains no rights to use, and will not challenge the validity of Client’s ownership in, such Intellectual Property Rights. Freelancer hereby waives any moral rights, rights of paternity, integrity, disclosure and withdrawal or inalienable rights under applicable law in and to the Work Product. If payment is made only for partial delivery of Work Product, the assignment described herein applies only to the portion of Work Product delivered.
+
+Copyright (c) 2022 ZroFreaks
