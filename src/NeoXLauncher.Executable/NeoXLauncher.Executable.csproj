@@ -12,6 +12,7 @@
   <ItemGroup>
     <None Remove="Images\Account.png" />
     <None Remove="Images\Close.png" />
+    <None Remove="Images\Discord.png" />
     <None Remove="Images\Gift.png" />
     <None Remove="Images\Home.png" />
     <None Remove="Images\NeoX.png" />
@@ -23,9 +24,11 @@
     <None Remove="Images\News\New5.png" />
     <None Remove="Images\News\New6.png" />
     <None Remove="Images\Password.png" />
+    <None Remove="Images\ZroAvatar.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Discord.png" />
     <Resource Include="Images\News\New5.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -72,6 +75,7 @@
     <Resource Include="Images\Password.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\ZroAvatar.jpg" />
   </ItemGroup>
 
   <ItemGroup>

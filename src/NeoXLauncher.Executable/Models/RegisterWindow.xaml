@@ -8,7 +8,10 @@
         Title="Register" Height="400" Width="380"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Helvetica" 
+        FontWeight="Light" 
+        Foreground="White">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -19,8 +22,8 @@
             <Border CornerRadius="10" Grid.RowSpan="2">
                 <Border.Background>
                     <LinearGradientBrush>
-                        <GradientStop Color="#7be9f6" Offset="0.0"/>
-                        <GradientStop Color="#f083da" Offset="1"/>
+                        <GradientStop Color="#242424" Offset="0.0"/>
+                        <GradientStop Color="#12171C" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
