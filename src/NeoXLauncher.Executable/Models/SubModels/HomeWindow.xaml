@@ -21,55 +21,75 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <StackPanel Height="450" Width="750" Orientation="Horizontal">
-            <StackPanel>
-                <TextBlock Text="HOME" FontSize="50" Background="Transparent" Margin="5,5,0,0" Height="55" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <StackPanel Orientation="Vertical" Height="450" Width="750">
+            <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="39" Margin="10,0,0,0">
+                        <Image Source="../../Images/HeaderProfile.png" Width="30" Height="30"/>
+                        <TextBlock Text="Welcome, username!" Margin="10,0,0,0" FontSize="16" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Rectangle Width="500" Height="250" Fill="#3D2B2B" RadiusX="5" RadiusY="5" Margin="15,50,0,0"/>
+                    <TextBlock Text="NeoX - Nostale" Margin="20,-245,0,0" FontSize="40" FontWeight="ExtraBold" Width="489"/>
+                    <TextBlock Text="New nostale private server" Margin="20,-190,5,0" Width="480" TextWrapping="Wrap"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="80,0,0,0">
+                    <Image Name="CloseButton" Source="../../Images/Close.png" Height="15" Width="15" VerticalAlignment="Center" Margin="120,7.5,0,0" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown"/>
+                    <StackPanel Margin="0,20,0,0">
+                        <Rectangle Width="120" Height="150" Fill="#3D2B2B" RadiusX="5" RadiusY="5" />
+                        <StackPanel Margin="10,-145,0,0">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Server status: "  />
+                                <Ellipse Name="ServerStatusEllipse" Fill="Red" Width="10" Height="10"></Ellipse>
+                            </StackPanel>
+                            <TextBlock Text="Online players: 100"  />
+                            <TextBlock Text="Xp Rate: 4"  />
+                            <TextBlock Text="Xp Rate: 4"  />
+                            <TextBlock Text="Xp Rate: 4"  />
+                            <TextBlock Text="Xp Rate: 4"  />
+                            <TextBlock Text="Xp Rate: 4"  />
+                            <TextBlock Text="Xp Rate: 4"  />
+                            <TextBlock Text="Xp Rate: 4"  />
+                            <TextBlock Text="Xp Rate: 4"  />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Margin="0,20,0,0">
+                        <Rectangle Width="120" Height="140" Fill="#3D2B2B" RadiusX="5" RadiusY="5" />
+                        <StackPanel Margin="10,-135,0,0">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="../../Images/Discord.png" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBlock Margin="5,-1,0,0" Text="DISCORD" FontSize="20" ></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                <Image Source="../../Images/ZroAvatar.jpg" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBlock Margin="5,3,0,0" Text="ZroIsHere#1337" ></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                <Image Source="../../Images/ZroAvatar.jpg" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBlock Margin="5,3,0,0" Text="ZroIsHere#1337" ></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                <Image Source="../../Images/ZroAvatar.jpg" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBlock Margin="5,3,0,0" Text="ZroIsHere#1337" ></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                <Image Source="../../Images/ZroAvatar.jpg" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBlock Margin="5,3,0,0" Text="ZroIsHere#1337" ></TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Vertical" Margin="460,0,0,0">
-                <Image Name="CloseButton" Source="../../Images/Close.png" Height="15" Width="15" VerticalAlignment="Top" Margin="120,10,10,0" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown"/>
-                <StackPanel Margin="0,20,0,0">
-                    <Rectangle Width="120" Height="150" Fill="#3D2B2B" RadiusX="5" RadiusY="5" />
-                    <StackPanel Margin="20,-145,0,0">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Server status: "  />
-                            <Ellipse Name="ServerStatusEllipse" Fill="Red" Width="10" Height="10"></Ellipse>
-                        </StackPanel>
-                        <TextBlock Text="Online players: 100"  />
-                        <TextBlock Text="Xp Rate: 4"  />
-                        <TextBlock Text="Xp Rate: 4"  />
-                        <TextBlock Text="Xp Rate: 4"  />
-                        <TextBlock Text="Xp Rate: 4"  />
-                        <TextBlock Text="Xp Rate: 4"  />
-                        <TextBlock Text="Xp Rate: 4"  />
-                        <TextBlock Text="Xp Rate: 4"  />
-                        <TextBlock Text="Xp Rate: 4"  />
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel Margin="0,20,0,0">
-                    <Rectangle Width="120" Height="140" Fill="#3D2B2B" RadiusX="5" RadiusY="5" />
-                    <StackPanel Margin="20,-135,0,0">
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="../../Images/Discord.png" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                            <TextBlock Margin="5,-1,0,0" Text="DISCORD" FontSize="20" ></TextBlock>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                            <Image Source="../../Images/ZroAvatar.jpg" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                            <TextBlock Margin="5,3,0,0" Text="ZroIsHere#1337" ></TextBlock>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                            <Image Source="../../Images/ZroAvatar.jpg" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                            <TextBlock Margin="5,3,0,0" Text="ZroIsHere#1337" ></TextBlock>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                            <Image Source="../../Images/ZroAvatar.jpg" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                            <TextBlock Margin="5,3,0,0" Text="ZroIsHere#1337" ></TextBlock>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                            <Image Source="../../Images/ZroAvatar.jpg" Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                            <TextBlock Margin="5,3,0,0" Text="ZroIsHere#1337" ></TextBlock>
-                        </StackPanel>
-                    </StackPanel>
-                </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="30,40,0,0">
+                <ProgressBar Height="15" Width="550" Value="50" Background="Transparent">
+                    <ProgressBar.Foreground>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,2">
+                            <GradientStop Color="#332F2E" Offset="0" />
+                            <GradientStop Color="#696969" Offset="0.5" />
+                            <GradientStop Color="White" Offset="1" />
+                        </LinearGradientBrush>
+                    </ProgressBar.Foreground>
+                </ProgressBar>
+                <Button Name="StartButton" Width="100" Height="40" Content="Start" Margin="45,0,60,0" HorizontalAlignment="Right" VerticalAlignment="Center" Click="StartButton_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>

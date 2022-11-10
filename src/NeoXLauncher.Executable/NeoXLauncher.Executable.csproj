@@ -14,9 +14,13 @@
     <None Remove="Images\Close.png" />
     <None Remove="Images\Discord.png" />
     <None Remove="Images\Gift.png" />
+    <None Remove="Images\GiftHover.png" />
+    <None Remove="Images\HeaderProfile.png" />
     <None Remove="Images\Home.png" />
+    <None Remove="Images\HomeHover.png" />
     <None Remove="Images\NeoX.png" />
     <None Remove="Images\News.png" />
+    <None Remove="Images\NewsHover.png" />
     <None Remove="Images\News\New1.png" />
     <None Remove="Images\News\New2.png" />
     <None Remove="Images\News\New3.png" />
@@ -24,11 +28,21 @@
     <None Remove="Images\News\New5.png" />
     <None Remove="Images\News\New6.png" />
     <None Remove="Images\Password.png" />
+    <None Remove="Images\PasswordHover.png" />
+    <None Remove="Images\Profile.png" />
+    <None Remove="Images\ProfileHover.png" />
     <None Remove="Images\ZroAvatar.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\Discord.png" />
+    <Resource Include="Images\GiftHover.png" />
+    <Resource Include="Images\HeaderProfile.png" />
+    <Resource Include="Images\HomeHover.png" />
+    <Resource Include="Images\NewsHover.png" />
+    <Resource Include="Images\PasswordHover.png" />
+    <Resource Include="Images\Profile.png" />
+    <Resource Include="Images\ProfileHover.png" />
     <Resource Include="Images\News\New5.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -57,9 +71,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Account.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="Images\Close.png" />
     <Resource Include="Images\Home.png" />
     <Resource Include="Images\NeoX.png">

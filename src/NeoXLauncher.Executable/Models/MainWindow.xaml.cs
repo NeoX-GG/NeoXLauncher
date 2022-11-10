@@ -1,4 +1,5 @@
-﻿using NeoXLauncher.Executable.Models.SubModels;
+﻿using NeoXLauncher.Executable.Enums;
+using NeoXLauncher.Executable.Models.SubModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,8 @@ namespace NeoXLauncher.Executable.Models;
 /// </summary>
 public partial class MainWindow : Window
 {
+    MainSubWindowType SubWindowType;
+
     public MainWindow()
     {
         InitializeComponent();
@@ -28,37 +31,89 @@ public partial class MainWindow : Window
 
     private void HomeButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
-        HomeWindow window = new();
         WindowStackPanel.Children.Clear();
 
+        HomeWindow window = new();
         object content = window.Content;
         window.Content = null;
         window.Close();
         WindowStackPanel.Children.Add(content as UIElement);
+        ChangeButtonHover(MainSubWindowType.Home);
     }
 
     private void NewsButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
 #if DEBUG
-        NewsWindow window = new();
         WindowStackPanel.Children.Clear();
 
+        NewsWindow window = new();
         object content = window.Content;
         window.Content = null;
         window.Close();
         WindowStackPanel.Children.Add(content as UIElement);
+        ChangeButtonHover(MainSubWindowType.News);
         return;
 #endif
         MessageBox.Show("In development");
     }
 
-    private void AccountButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    private void ProfileButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
-
+#if DEBUG
+        MessageBox.Show("In development");
+        return;
+#endif
+        MessageBox.Show("In development");
     }
 
     private void GiftButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
+#if DEBUG
+        MessageBox.Show("In development");
+        return;
+#endif
+        MessageBox.Show("In development");
+    }
 
+    void ChangeButtonHover(MainSubWindowType NewType)
+    {
+        if (SubWindowType == NewType)
+        {
+            return;
+        }
+
+        switch(SubWindowType)
+        {
+            case MainSubWindowType.Home:
+                HomeButton.Source = new BitmapImage(new Uri(@"../Images/Home.png", UriKind.Relative));
+                break;
+            case MainSubWindowType.Profile:
+                ProfileButton.Source = new BitmapImage(new Uri(@"../Images/Profile.png", UriKind.Relative));
+                break;
+            case MainSubWindowType.News:
+                NewsButton.Source = new BitmapImage(new Uri(@"../Images/News.png", UriKind.Relative));
+                break;
+            case MainSubWindowType.Gift:
+                GiftButton.Source = new BitmapImage(new Uri(@"../Images/Gift.png", UriKind.Relative));
+                break;
+        }
+
+        SubWindowType = NewType;
+
+        switch (SubWindowType)
+        {
+            case MainSubWindowType.Home:
+                HomeButton.Source = new BitmapImage(new Uri(@"../Images/HomeHover.png", UriKind.Relative));
+                break;
+            case MainSubWindowType.Profile:
+                ProfileButton.Source = new BitmapImage(new Uri(@"../Images/ProfileHover.png", UriKind.Relative));
+                break;
+            case MainSubWindowType.News:
+                NewsButton.Source = new BitmapImage(new Uri(@"../Images/NewsHover.png", UriKind.Relative));
+                break;
+            case MainSubWindowType.Gift:
+                GiftButton.Source = new BitmapImage(new Uri(@"../Images/GiftHover.png", UriKind.Relative));
+                break;
+        }
     }
 }

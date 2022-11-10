@@ -34,5 +34,10 @@ namespace NeoXLauncher.Executable.Models.SubModels
         {
             Environment.Exit(1);
         }
+
+        private void StartButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
