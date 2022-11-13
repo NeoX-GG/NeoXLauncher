@@ -9,7 +9,6 @@ namespace NeoXLauncher.Executable.Enums
     public enum MainSubWindowType : byte
     {
         Home,
-        Profile,
         News,
         Gift
     }

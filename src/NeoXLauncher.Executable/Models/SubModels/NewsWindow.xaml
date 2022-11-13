@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NeoXLauncher.Executable.Models.SubModels"
         mc:Ignorable="d"
-        Title="NewsWindow" Height="450" Width="750"
+        Title="NewsWindow" Height="410" Width="750"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -21,40 +21,10 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <StackPanel Height="450" Width="750" Orientation="Horizontal">
+        <StackPanel Height="410" Width="750" Orientation="Horizontal">
             <TextBlock Text="NEWS" FontSize="50" Background="Transparent" Margin="5,5,0,0" Height="55" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-            <Image Name="CloseButton" Source="../../Images/Close.png" Height="15" Width="15" VerticalAlignment="Top" Margin="590,10,10,0" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown"/>
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <StackPanel Orientation="Horizontal" Margin="10,65,10,0">
-                <StackPanel>
-                    <Image Name="NewImage1" Source="../../Images/News/New1.png" Height="160" Width="160" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                    <TextBlock Name="NewText1" Text="News" FontSize="12" Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,0" Width="160"/>
-                </StackPanel>
-                <StackPanel Margin="125,0,0,0">
-                    <Image Name="NewImage2" Source="../../Images/News/New2.png" Height="160" Width="160" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                    <TextBlock Name="NewText2" Text="News" FontSize="12" Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,0"  Width="160"/>
-                </StackPanel>
-                <StackPanel Margin="125,0,0,0">
-                    <Image Name="NewImage3" Source="../../Images/News/New3.png" Height="160" Width="160" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                    <TextBlock Name="NewText3" Text="News" FontSize="12" Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,0"  Width="160"/>
-                </StackPanel>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="10,30,10,0">
-                <StackPanel>
-                    <Image Name="NewImage4" Source="../../Images/News/New4.png" Height="160" Width="160" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                    <TextBlock Name="NewText4" Text="News" FontSize="12" Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,0"  Width="160"/>
-                </StackPanel>
-                <StackPanel Margin="125,0,0,0">
-                    <Image Name="NewImage5" Source="../../Images/News/New5.png" Height="160" Width="160" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                    <TextBlock Name="NewText5" Text="News" FontSize="12" Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,0"  Width="160"/>
-                </StackPanel>
-                <StackPanel Margin="125,0,0,0">
-                    <Image Name="NewImage6" Source="../../Images/News/New6.png" Height="160" Width="160" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                    <TextBlock Name="NewText6" Text="News" FontSize="12" Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,0"  Width="160"/>
-                </StackPanel>
-            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

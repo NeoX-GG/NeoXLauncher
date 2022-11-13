@@ -23,10 +23,5 @@ namespace NeoXLauncher.Executable.Models.SubModels
         {
             InitializeComponent();
         }
-
-        private void CloseButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            Environment.Exit(1);
-        }
     }
 }

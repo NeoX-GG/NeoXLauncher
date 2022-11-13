@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NeoXLauncher.Executable.Models.SubModels"
         mc:Ignorable="d"
-        Title="HomeWindow" Height="450" Width="750"
+        Title="HomeWindow" Height="410" Width="750"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -13,7 +13,7 @@
         FontWeight="Light" 
         Foreground="White">
     <Grid>
-        <Border CornerRadius="0,10,10,0" Grid.RowSpan="2">
+        <Border CornerRadius="0,0,10,0" Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#12171C" Offset="0.0"/>
@@ -21,19 +21,14 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <StackPanel Orientation="Vertical" Height="450" Width="750">
+        <StackPanel Orientation="Vertical" Height="410" Width="750">
             <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
                 <StackPanel>
-                    <StackPanel Orientation="Horizontal" Height="39" Margin="10,0,0,0">
-                        <Image Source="../../Images/HeaderProfile.png" Width="30" Height="30"/>
-                        <TextBlock Text="Welcome, username!" Margin="10,0,0,0" FontSize="16" VerticalAlignment="Center"/>
-                    </StackPanel>
                     <Rectangle Width="500" Height="250" Fill="#3D2B2B" RadiusX="5" RadiusY="5" Margin="15,50,0,0"/>
                     <TextBlock Text="NeoX - Nostale" Margin="20,-245,0,0" FontSize="40" FontWeight="ExtraBold" Width="489"/>
                     <TextBlock Text="New nostale private server" Margin="20,-190,5,0" Width="480" TextWrapping="Wrap"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Margin="80,0,0,0">
-                    <Image Name="CloseButton" Source="../../Images/Close.png" Height="15" Width="15" VerticalAlignment="Center" Margin="120,7.5,0,0" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown"/>
                     <StackPanel Margin="0,20,0,0">
                         <Rectangle Width="120" Height="150" Fill="#3D2B2B" RadiusX="5" RadiusY="5" />
                         <StackPanel Margin="10,-145,0,0">
@@ -79,7 +74,7 @@
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="30,40,0,0">
+            <StackPanel Orientation="Horizontal" Margin="30,20,0,0">
                 <ProgressBar Height="15" Width="550" Value="50" Background="Transparent">
                     <ProgressBar.Foreground>
                         <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,2">

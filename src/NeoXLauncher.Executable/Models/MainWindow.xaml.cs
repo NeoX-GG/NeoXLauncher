@@ -57,7 +57,7 @@ public partial class MainWindow : Window
         MessageBox.Show("In development");
     }
 
-    private void ProfileButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    private void GiftButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
 #if DEBUG
         MessageBox.Show("In development");
@@ -66,13 +66,9 @@ public partial class MainWindow : Window
         MessageBox.Show("In development");
     }
 
-    private void GiftButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    private void CloseButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
-#if DEBUG
-        MessageBox.Show("In development");
-        return;
-#endif
-        MessageBox.Show("In development");
+        Environment.Exit(1);
     }
 
     void ChangeButtonHover(MainSubWindowType NewType)
@@ -86,9 +82,6 @@ public partial class MainWindow : Window
         {
             case MainSubWindowType.Home:
                 HomeButton.Source = new BitmapImage(new Uri(@"../Images/Home.png", UriKind.Relative));
-                break;
-            case MainSubWindowType.Profile:
-                ProfileButton.Source = new BitmapImage(new Uri(@"../Images/Profile.png", UriKind.Relative));
                 break;
             case MainSubWindowType.News:
                 NewsButton.Source = new BitmapImage(new Uri(@"../Images/News.png", UriKind.Relative));
@@ -104,9 +97,6 @@ public partial class MainWindow : Window
         {
             case MainSubWindowType.Home:
                 HomeButton.Source = new BitmapImage(new Uri(@"../Images/HomeHover.png", UriKind.Relative));
-                break;
-            case MainSubWindowType.Profile:
-                ProfileButton.Source = new BitmapImage(new Uri(@"../Images/ProfileHover.png", UriKind.Relative));
                 break;
             case MainSubWindowType.News:
                 NewsButton.Source = new BitmapImage(new Uri(@"../Images/NewsHover.png", UriKind.Relative));

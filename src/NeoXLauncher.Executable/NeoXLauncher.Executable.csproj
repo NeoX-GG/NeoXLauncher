@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <PackageIcon>Logo.png</PackageIcon>
@@ -29,8 +29,6 @@
     <None Remove="Images\News\New6.png" />
     <None Remove="Images\Password.png" />
     <None Remove="Images\PasswordHover.png" />
-    <None Remove="Images\Profile.png" />
-    <None Remove="Images\ProfileHover.png" />
     <None Remove="Images\ZroAvatar.jpg" />
   </ItemGroup>
 
@@ -41,8 +39,6 @@
     <Resource Include="Images\HomeHover.png" />
     <Resource Include="Images\NewsHover.png" />
     <Resource Include="Images\PasswordHover.png" />
-    <Resource Include="Images\Profile.png" />
-    <Resource Include="Images\ProfileHover.png" />
     <Resource Include="Images\News\New5.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
