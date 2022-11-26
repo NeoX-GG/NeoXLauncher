@@ -13,12 +13,7 @@
         FontWeight="Light" 
         Foreground="White">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="750"/>
-        </Grid.ColumnDefinitions>
-
-        <Border CornerRadius="10" Grid.ColumnSpan="2">
+        <Border CornerRadius="10">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#242424" Offset="0.0"/>
@@ -27,23 +22,34 @@
             </Border.Background>
         </Border>
 
-        <StackPanel Orientation="Vertical" Grid.ColumnSpan="1">
-            <Image Name="HomeButton" Source="../Images/Home.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="HomeButton_MouseLeftButtonDown"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+            <Image Name="HomeButton" Source="../Images/HomeHover.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="HomeButton_MouseLeftButtonDown"/>
             <Image Name="NewsButton" Source="../Images/News.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="NewsButton_MouseLeftButtonDown"/>
             <Image Name="GiftButton" Source="../Images/Gift.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="GiftButton_MouseLeftButtonDown"/>
         </StackPanel>
 
-        <StackPanel Name="HeaderStackPanel" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.ColumnSpan="2" Height="40" Width="750" Orientation="Horizontal">
-            <StackPanel.Background>
+
+        <Border CornerRadius="0,10,10,0" Margin="50,0,0,0">
+            <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#202222" Offset="1"/>
                     <GradientStop Color="#12171C" Offset="0"/>
                 </LinearGradientBrush>
-            </StackPanel.Background>
-            <Image Source="../Images/HeaderProfile.png" Width="30" Height="30" Margin="10,0,0,0"/>
-            <TextBlock Text="Welcome, username!" Margin="10,0,0,0" FontSize="16" VerticalAlignment="Center"/>
-            <Image Name="CloseButton" Source="../Images/Close.png" Height="15" Width="15" VerticalAlignment="Center" Margin="530,0,0,0" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown"/>
-        </StackPanel>
-        <StackPanel Name="WindowStackPanel" VerticalAlignment="Bottom" HorizontalAlignment="Right" Grid.ColumnSpan="2" Height="410" Width="750"/>
+            </Border.Background>
+            <StackPanel Name="HeaderStackPanel" VerticalAlignment="Top" HorizontalAlignment="Left" Height="40" Width="750" Orientation="Horizontal">
+                <!--StackPanel.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#202222" Offset="1"/>
+                    <GradientStop Color="#12171C" Offset="0"/>
+                </LinearGradientBrush>
+            </StackPanel.Background-->
+                <Image Source="../Images/HeaderProfile.png" Width="30" Height="30" Margin="10,0,0,0"/>
+                <TextBlock Text="Welcome, username!" Margin="10,0,0,0" FontSize="16" VerticalAlignment="Center"/>
+                <Image Name="CloseButton" Source="../Images/Close.png" Height="15" Width="15" VerticalAlignment="Center" Margin="530,0,0,0" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown" HorizontalAlignment="Center"/>
+            </StackPanel>
+
+        </Border>
+
+        <StackPanel Name="WindowStackPanel" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="410" Width="750" Margin="50,0,0,0"/>
     </Grid>
 </Window>
