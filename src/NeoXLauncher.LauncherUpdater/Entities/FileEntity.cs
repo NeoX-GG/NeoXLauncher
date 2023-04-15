@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NeoXLauncher.LauncherUpdater.Entities
+namespace NeoXLauncher.LauncherUpdater.Entities;
+
+public class FileEntity
 {
-    public class FileEntity
-    {
-        public string Path { get; set; }
-        public string Hash { get; set; }
-        public long BytesSize { get; set; }
-    }
+    public string Path { get; set; }
+    public string Hash { get; set; }
+    public long BytesSize { get; set; }
 }

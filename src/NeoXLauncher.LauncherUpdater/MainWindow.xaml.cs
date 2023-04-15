@@ -19,64 +19,63 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NeoXLauncher.LauncherUpdater
+namespace NeoXLauncher.LauncherUpdater;
+
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
 
-        private async void Window_Loaded(object sender, RoutedEventArgs e)
+    private async void Window_Loaded(object sender, RoutedEventArgs e)
+    {
+        Start();
+        DownloadHelper.webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(FileProgressChanged);
+        DownloadHelper.webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(FileCompleted);
+        if (ConfigVariables.DownloadActive && !DownloadHelper.SameFiles())
         {
-            Start();
-            DownloadHelper.webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(FileProgressChanged);
-            DownloadHelper.webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(FileCompleted);
-            if (ConfigVariables.DownloadActive && !DownloadHelper.SameFiles())
-            {
-                DownloadHelper.Download();
-            }
+            DownloadHelper.Download();
         }
+    }
 
-        private async Task Start()
+    private async Task Start()
+    {
+        UpdateBar.Value = 0;
+        while (UpdateBar.Value != 100)
         {
-            UpdateBar.Value = 0;
-            while (UpdateBar.Value != 100)
-            {
-                UpdateBar.Value += 10;
-                await Task.Delay(150);
-            }
+            UpdateBar.Value += 10;
+            await Task.Delay(150);
         }
+    }
 
-        private void FileCompleted(object? sender, AsyncCompletedEventArgs e)
+    private void FileCompleted(object? sender, AsyncCompletedEventArgs e)
+    {
+        if (DownloadHelper.Finished())
         {
-            if (DownloadHelper.Finished())
-            {
-                DownloadHelper.Download();
-                return;
-            }
-            StartLauncher();
+            DownloadHelper.Download();
+            return;
         }
+        StartLauncher();
+    }
 
-        private void FileProgressChanged(object sender, DownloadProgressChangedEventArgs e)
-        {
-            UpdateBar.Value = e.ProgressPercentage;
-        }
+    private void FileProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+    {
+        UpdateBar.Value = e.ProgressPercentage;
+    }
 
-        private void StartLauncher()
+    private void StartLauncher()
+    {
+        ProcessStartInfo Si = new()
         {
-            ProcessStartInfo Si = new()
-            {
-                FileName = "NeoXLauncher.exe",
-                Verb = "runas",
-                UseShellExecute = true
-            };
-            Process.Start(Si);
-            Environment.Exit(1);
-        }
+            FileName = "NeoXLauncher.exe",
+            Verb = "runas",
+            UseShellExecute = true
+        };
+        Process.Start(Si);
+        Environment.Exit(1);
     }
 }
