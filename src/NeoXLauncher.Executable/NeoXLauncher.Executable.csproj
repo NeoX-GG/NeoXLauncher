@@ -12,6 +12,8 @@
   <ItemGroup>
     <None Remove="Images\Account.png" />
     <None Remove="Images\Close.png" />
+    <None Remove="Images\Config.png" />
+    <None Remove="Images\ConfigHover.png" />
     <None Remove="Images\Discord.png" />
     <None Remove="Images\Gift.png" />
     <None Remove="Images\GiftHover.png" />
@@ -33,6 +35,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Config.png" />
+    <Resource Include="Images\ConfigHover.png" />
     <Resource Include="Images\Discord.png" />
     <Resource Include="Images\GiftHover.png" />
     <Resource Include="Images\HeaderProfile.png" />

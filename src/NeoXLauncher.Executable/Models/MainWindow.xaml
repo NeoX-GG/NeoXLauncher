@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NeoXLauncher.Executable.Models"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="NeoXLauncher" Height="450" Width="800"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -26,6 +26,14 @@
             <Image Name="HomeButton" Source="../Images/HomeHover.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="HomeButton_MouseLeftButtonDown"/>
             <Image Name="NewsButton" Source="../Images/News.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="NewsButton_MouseLeftButtonDown"/>
             <Image Name="GiftButton" Source="../Images/Gift.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="GiftButton_MouseLeftButtonDown"/>
+            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
+            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
+            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
+            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
+            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
+            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
+            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
+            <Image Name="ConfigButton" Source="../Images/Config.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="ConfigButton_MouseLeftButtonDown"/>
         </StackPanel>
 
 

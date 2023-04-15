@@ -19,12 +19,6 @@ namespace NeoXLauncher.Executable.Models.SubModels
     /// </summary>
     public partial class HomeWindow : Window
     {
-        public string NewImage1 = "https://png.pngtree.com/element_our/png/20180928/beautiful-hologram-water-color-frame-png_119551.jpg";
-        public string NewImage2 = "https://png.pngtree.com/element_our/png/20180928/beautiful-hologram-water-color-frame-png_119551.jpg";
-        public string NewImage3 = "https://png.pngtree.com/element_our/png/20180928/beautiful-hologram-water-color-frame-png_119551.jpg";
-        public string NewImage4 = "https://png.pngtree.com/element_our/png/20180928/beautiful-hologram-water-color-frame-png_119551.jpg";
-        public string NewImage5 = "https://png.pngtree.com/element_our/png/20180928/beautiful-hologram-water-color-frame-png_119551.jpg";
-        public string NewImage6 = "https://png.pngtree.com/element_our/png/20180928/beautiful-hologram-water-color-frame-png_119551.jpg";
         public HomeWindow()
         {
             InitializeComponent();

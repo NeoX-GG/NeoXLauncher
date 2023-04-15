@@ -66,6 +66,15 @@ public partial class MainWindow : Window
         MessageBox.Show("In development");
     }
 
+    private void ConfigButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    {
+#if DEBUG
+        MessageBox.Show("In development");
+        return;
+#endif
+        MessageBox.Show("In development");
+    }
+
     private void CloseButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
         Environment.Exit(1);
@@ -89,6 +98,9 @@ public partial class MainWindow : Window
             case MainSubWindowType.Gift:
                 GiftButton.Source = new BitmapImage(new Uri(@"../Images/Gift.png", UriKind.Relative));
                 break;
+            case MainSubWindowType.Config:
+                ConfigButton.Source = new BitmapImage(new Uri(@"../Images/Config.png", UriKind.Relative));
+                break;
         }
 
         SubWindowType = NewType;
@@ -103,6 +115,9 @@ public partial class MainWindow : Window
                 break;
             case MainSubWindowType.Gift:
                 GiftButton.Source = new BitmapImage(new Uri(@"../Images/GiftHover.png", UriKind.Relative));
+                break;
+            case MainSubWindowType.Config:
+                ConfigButton.Source = new BitmapImage(new Uri(@"../Images/ConfigHover.png", UriKind.Relative));
                 break;
         }
     }

@@ -10,6 +10,7 @@ namespace NeoXLauncher.Executable.Enums
     {
         Home,
         News,
-        Gift
+        Gift,
+        Config
     }
 }
