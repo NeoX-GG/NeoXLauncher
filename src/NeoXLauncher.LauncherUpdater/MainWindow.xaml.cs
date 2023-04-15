@@ -60,9 +60,10 @@ public partial class MainWindow : Window
             return;
         }
 
-        if (!DownloadHelper.JsonIsCurrent)
+        if (!DownloadHelper.JsonIsDownloaded)
         {
             DownloadHelper.DownloadActualJson();
+            return;
         }
         StartLauncher();
     }
