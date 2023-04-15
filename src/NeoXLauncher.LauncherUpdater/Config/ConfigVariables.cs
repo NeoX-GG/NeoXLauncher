@@ -13,4 +13,7 @@ public static class ConfigVariables
     public static string LocalJsonFile = "launcher.json";
     public static string ActualJsonFile = MainDownloadUrl + LocalJsonFile;
     public static string DownloadUrl = MainDownloadUrl + "files/";
+
+    public static string ExecutableName = "NeoXLauncher.exe";
+    public static string ExecutableArgument = "";
 }

@@ -20,6 +20,7 @@ public class DownloadHelper
     static List<FileEntity> ActualFiles = new();
     static List<FileEntity> ToDownload = new();
     static FileEntity CurrentFile = null;
+    public static bool JsonIsCurrent = false;
 
     public static bool SameFiles()
     {
@@ -88,5 +89,12 @@ public class DownloadHelper
         using Stream responseStream = httpWebResponse.GetResponseStream();
         using StreamReader streamReader = new StreamReader(responseStream);
         return streamReader.ReadToEnd();
+    }
+
+    public static void DownloadActualJson()
+    {
+        File.Delete(ConfigVariables.LocalJsonFile);
+        webClient.DownloadFileAsync(new Uri(ConfigVariables.ActualJsonFile), ConfigVariables.LocalJsonFile);
+        JsonIsCurrent = true;
     }
 }

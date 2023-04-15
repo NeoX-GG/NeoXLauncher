@@ -59,6 +59,11 @@ public partial class MainWindow : Window
             DownloadHelper.Download();
             return;
         }
+
+        if (!DownloadHelper.JsonIsCurrent)
+        {
+            DownloadHelper.DownloadActualJson();
+        }
         StartLauncher();
     }
 
@@ -71,8 +76,9 @@ public partial class MainWindow : Window
     {
         ProcessStartInfo Si = new()
         {
-            FileName = "NeoXLauncher.exe",
+            FileName = ConfigVariables.ExecutableName,
             Verb = "runas",
+            Arguments = ConfigVariables.ExecutableArgument,
             UseShellExecute = true
         };
         Process.Start(Si);
