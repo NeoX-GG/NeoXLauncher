@@ -33,13 +33,14 @@ public partial class MainWindow : Window
 
     private async void Window_Loaded(object sender, RoutedEventArgs e)
     {
-        //Start();
+        await Start();
         DownloadHelper.webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(FileProgressChanged);
         DownloadHelper.webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(FileCompleted);
-        if (ConfigVariables.DownloadActive && !DownloadHelper.SameFiles())
+        if (!ConfigVariables.DownloadActive || DownloadHelper.SameFiles())
         {
-            DownloadHelper.Download();
+            StartLauncher();
         }
+        DownloadHelper.Download();
     }
 
     private async Task Start()
@@ -49,6 +50,11 @@ public partial class MainWindow : Window
         {
             UpdateBar.Value += 10;
             await Task.Delay(150);
+        }
+
+        if (!Directory.Exists("./Game"))
+        {
+            Directory.CreateDirectory("./Game");
         }
     }
 
@@ -82,8 +88,7 @@ public partial class MainWindow : Window
             Arguments = ConfigVariables.ExecutableArgument,
             UseShellExecute = true
         };
-        //Process.Start(Si);
-        MessageBox.Show("Finished");
+        Process.Start(Si);
         Environment.Exit(1);
     }
 }

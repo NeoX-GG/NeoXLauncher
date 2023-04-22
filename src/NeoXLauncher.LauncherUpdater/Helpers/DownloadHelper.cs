@@ -46,7 +46,7 @@ public class DownloadHelper
             {
                 FileEntity LocalFile = LocalFiles.FirstOrDefault(s => s.Path.Equals(fileEntity.Path));
 
-                if (LocalFile == null)
+                if (!File.Exists(fileEntity.Path))
                 {
                     ToDownload.Add(fileEntity);
                     continue;
@@ -80,7 +80,7 @@ public class DownloadHelper
     {
         CurrentFile = ToDownload.First();
         ToDownload.Remove(CurrentFile);
-        webClient.DownloadFileAsync(new Uri(ConfigVariables.DownloadUrl + CurrentFile.Path), CurrentFile.Path);
+        webClient.DownloadFileAsync(new Uri(ConfigVariables.DownloadUrl + CurrentFile.Path), ConfigVariables.GameFolder + CurrentFile.Path);
     }
 
     private static string GetOnlineJsonString()
