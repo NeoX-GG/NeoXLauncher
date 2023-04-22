@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NeoXLauncher.LauncherUpdater"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="800"
+        Title="MainWindow" Height="280" Width="800"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -14,11 +14,12 @@
     <Grid>
         <Border CornerRadius="10">
             <Border.Background>
-                <ImageBrush ImageSource="./Images/NeoX.png"></ImageBrush>
+                <SolidColorBrush Color="Transparent"></SolidColorBrush>
             </Border.Background>
         </Border>
-        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,15">
-            <ProgressBar Name="UpdateBar" Background="Transparent" BorderBrush="Black" Foreground="#262626" Value="50" Width="700" Height="20" Maximum="100" />
+        <StackPanel Margin="0,0,0,0" HorizontalAlignment="Center">
+            <Image Source="../Images/NeoX.png"></Image>
+            <ProgressBar Name="UpdateBar" Background="Transparent" BorderBrush="Black" Foreground="#262626" Value="50" Width="700" Height="20" Maximum="100" Margin="0,15,0,0" />
         </StackPanel>
     </Grid>
 </Window>

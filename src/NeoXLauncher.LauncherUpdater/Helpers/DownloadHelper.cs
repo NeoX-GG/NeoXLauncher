@@ -29,32 +29,33 @@ public class DownloadHelper
             LocalFiles = JsonConvert.DeserializeObject<List<FileEntity>>(File.ReadAllText(ConfigVariables.LocalJsonFile));
         }
 
-        if (LocalFiles != null && LocalFiles.Count > 0)
+        foreach (JToken jtoken in JArray.Parse(GetOnlineJsonString()))
         {
-            foreach (JToken jtoken in JArray.Parse(GetOnlineJsonString()))
+            JObject jobject = (JObject)jtoken;
+            ActualFiles.Add(new()
             {
-                JObject jobject = (JObject)jtoken;
-                ActualFiles.Add(new()
-                {
-                    Path = jobject["Path"].ToString() ?? "",
-                    Hash = jobject["Hash"].ToString() ?? "",
-                    BytesSize = Convert.ToInt64(jobject["Hash"].ToString() ?? "0")
-                });
-            }
+                Path = jobject["Path"].ToString() ?? "",
+                Hash = jobject["Hash"].ToString() ?? "",
+                BytesSize = Convert.ToInt64(jobject["BytesSize"].ToString() ?? "0")
+            });
         }
 
         if (ActualFiles != null && ActualFiles.Count > 0)
         {
-            foreach(FileEntity fileEntity in ActualFiles)
+            foreach (FileEntity fileEntity in ActualFiles)
             {
-                if (!File.Exists(fileEntity.Path))
+                FileEntity LocalFile = LocalFiles.FirstOrDefault(s => s.Path.Equals(fileEntity.Path));
+
+                if (LocalFile == null)
                 {
                     ToDownload.Add(fileEntity);
                     continue;
                 }
 
-                if (LocalFiles.FirstOrDefault(s => s.Path.Equals(fileEntity.Path)).Hash != fileEntity.Hash ||
-                    new FileInfo(fileEntity.Path).Length != fileEntity.BytesSize)
+                FileInfo Info = new FileInfo(fileEntity.Path);
+
+                if (LocalFile.Hash.ToLower() != fileEntity.Hash.ToLower() ||
+                    Info.Length != fileEntity.BytesSize)
                 {
                     File.Delete(fileEntity.Path);
                     ToDownload.Add(fileEntity);
@@ -72,12 +73,12 @@ public class DownloadHelper
 
     public static bool Finished()
     {
-        return ToDownload.Count < 1;
+        return ToDownload.Count <= 0;
     }
 
     public static void Download() 
     {
-        CurrentFile = ToDownload.FirstOrDefault();
+        CurrentFile = ToDownload.First();
         ToDownload.Remove(CurrentFile);
         webClient.DownloadFileAsync(new Uri(ConfigVariables.DownloadUrl + CurrentFile.Path), CurrentFile.Path);
     }

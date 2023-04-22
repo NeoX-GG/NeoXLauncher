@@ -33,7 +33,7 @@ public partial class MainWindow : Window
 
     private async void Window_Loaded(object sender, RoutedEventArgs e)
     {
-        Start();
+        //Start();
         DownloadHelper.webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(FileProgressChanged);
         DownloadHelper.webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(FileCompleted);
         if (ConfigVariables.DownloadActive && !DownloadHelper.SameFiles())
@@ -54,7 +54,7 @@ public partial class MainWindow : Window
 
     private void FileCompleted(object? sender, AsyncCompletedEventArgs e)
     {
-        if (DownloadHelper.Finished())
+        if (!DownloadHelper.Finished())
         {
             DownloadHelper.Download();
             return;
@@ -82,7 +82,8 @@ public partial class MainWindow : Window
             Arguments = ConfigVariables.ExecutableArgument,
             UseShellExecute = true
         };
-        Process.Start(Si);
+        //Process.Start(Si);
+        MessageBox.Show("Finished");
         Environment.Exit(1);
     }
 }
