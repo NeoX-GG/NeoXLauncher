@@ -73,7 +73,7 @@ public class DownloadHelper
 
     public static bool Finished()
     {
-        return ToDownload.Count <= 0;
+        return ToDownload.Count < 1;
     }
 
     public static void Download() 
