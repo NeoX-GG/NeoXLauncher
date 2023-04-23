@@ -55,9 +55,28 @@
                 <TextBlock Text="Welcome, username!" Margin="10,0,0,0" FontSize="16" VerticalAlignment="Center"/>
                 <Image Name="CloseButton" Source="../Images/Close.png" Height="15" Width="15" VerticalAlignment="Center" Margin="530,0,0,0" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown" HorizontalAlignment="Center"/>
             </StackPanel>
-
         </Border>
 
-        <StackPanel Name="WindowStackPanel" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="410" Width="750" Margin="50,0,0,0"/>
+        <!-- Submodels -->
+        
+        <StackPanel Name="HomeStackPanel" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="410" Width="750" Margin="50,0,0,0">
+            <ScrollViewer>
+                <StackPanel Orientation="Vertical" Width="90">
+                    <Image Source="../Images/News/New1.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                    <Image Source="../Images/News/New2.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                    <Image Source="../Images/News/New3.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                    <Image Source="../Images/News/New4.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                    <Image Source="../Images/News/New5.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                </StackPanel>
+
+            </ScrollViewer>
+        </StackPanel>
+        
+        
     </Grid>
 </Window>

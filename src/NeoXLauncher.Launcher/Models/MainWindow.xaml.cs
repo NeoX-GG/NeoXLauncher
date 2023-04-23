@@ -1,5 +1,4 @@
 ﻿using NeoXLauncher.Launcher.Enums;
-using NeoXLauncher.Launcher.Models.SubModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,32 +25,22 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        HomeButton_MouseLeftButtonDown(null, null);
+        //HomeButton_MouseLeftButtonDown(null, null);
     }
 
     private void HomeButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
-        WindowStackPanel.Children.Clear();
-
-        HomeWindow window = new();
-        object content = window.Content;
-        window.Content = null;
-        window.Close();
-        WindowStackPanel.Children.Add(content as UIElement);
-        ChangeButtonHover(MainSubWindowType.Home);
+#if DEBUG
+        MessageBox.Show("In development");
+        return;
+#endif
+        MessageBox.Show("In development");
     }
 
     private void NewsButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
 #if DEBUG
-        WindowStackPanel.Children.Clear();
-
-        NewsWindow window = new();
-        object content = window.Content;
-        window.Content = null;
-        window.Close();
-        WindowStackPanel.Children.Add(content as UIElement);
-        ChangeButtonHover(MainSubWindowType.News);
+        MessageBox.Show("In development");
         return;
 #endif
         MessageBox.Show("In development");

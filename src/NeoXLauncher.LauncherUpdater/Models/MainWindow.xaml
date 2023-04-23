@@ -19,7 +19,15 @@
         </Border>
         <StackPanel Margin="0,0,0,0" HorizontalAlignment="Center">
             <Image Source="../Images/NeoX.png"></Image>
-            <ProgressBar Name="UpdateBar" Background="Transparent" BorderBrush="Black" Foreground="#262626" Value="0" Width="700" Height="20" Maximum="100" Margin="0,15,0,0" />
+            <ProgressBar Name="UpdateBar" Height="15" Width="755" Value="50" Background="Transparent" Margin="0,15,0,0">
+                <ProgressBar.Foreground>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,2">
+                        <GradientStop Color="#332F2E" Offset="0" />
+                        <GradientStop Color="#696969" Offset="0.5" />
+                        <GradientStop Color="White" Offset="1" />
+                    </LinearGradientBrush>
+                </ProgressBar.Foreground>
+            </ProgressBar>
         </StackPanel>
     </Grid>
 </Window>
