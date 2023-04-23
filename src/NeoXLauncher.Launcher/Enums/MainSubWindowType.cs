@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NeoXLauncher.Executable.Enums
+namespace NeoXLauncher.Launcher.Enums
 {
     public enum MainSubWindowType : byte
     {

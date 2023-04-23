@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace NeoXLauncher.Executable.Helpers;
+namespace NeoXLauncher.Launcher.Helpers;
 
 public class KeyDownHelper
 {

@@ -1,5 +1,5 @@
-﻿using NeoXLauncher.Executable.Enums;
-using NeoXLauncher.Executable.Models.SubModels;
+﻿using NeoXLauncher.Launcher.Enums;
+using NeoXLauncher.Launcher.Models.SubModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace NeoXLauncher.Executable.Models;
+namespace NeoXLauncher.Launcher.Models;
 
 /// <summary>
 /// Lógica de interacción para MainWindow.xaml

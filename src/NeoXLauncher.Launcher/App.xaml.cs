@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace NeoXLauncher.Executable;
+namespace NeoXLauncher.Launcher;
 
 /// <summary>
 /// Interaction logic for App.xaml

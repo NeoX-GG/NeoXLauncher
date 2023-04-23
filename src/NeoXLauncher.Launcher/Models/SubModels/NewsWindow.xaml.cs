@@ -12,21 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace NeoXLauncher.Executable.Models.SubModels
+namespace NeoXLauncher.Launcher.Models.SubModels
 {
     /// <summary>
-    /// Lógica de interacción para HomeWindow.xaml
+    /// Lógica de interacción para NewsWindow.xaml
     /// </summary>
-    public partial class HomeWindow : Window
+    public partial class NewsWindow : Window
     {
-        public HomeWindow()
+        public NewsWindow()
         {
             InitializeComponent();
-        }
-
-        private void StartButton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

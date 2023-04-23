@@ -1,9 +1,9 @@
-﻿using NeoXLauncher.Executable.Helpers;
+﻿using NeoXLauncher.Launcher.Helpers;
 using System;
 using System.Windows;
 using System.Windows.Input;
 
-namespace NeoXLauncher.Executable.Models;
+namespace NeoXLauncher.Launcher.Models;
 
 /// <summary>
 /// Lógica de interacción para LoginWindow.xaml

@@ -15,6 +15,6 @@ public static class ConfigVariables
     public static string DownloadUrl = MainDownloadUrl + "files/";
 
     public static string GameFolder = @"Game\";
-    public static string ExecutableName = GameFolder + "NeoXLauncher.Executable.exe";
+    public static string ExecutableName = GameFolder + "NeoXLauncher.Launcher.exe";
     public static string ExecutableArgument = "";
 }
