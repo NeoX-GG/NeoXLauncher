@@ -13,70 +13,35 @@
         FontWeight="Light" 
         Foreground="White">
     <Grid>
-        <Border CornerRadius="10">
-            <Border.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="#242424" Offset="0.0"/>
-                    <GradientStop Color="#12171C" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
 
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
-            <Image Name="HomeButton" Source="../Images/HomeHover.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="HomeButton_MouseLeftButtonDown"/>
-            <Image Name="NewsButton" Source="../Images/News.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="NewsButton_MouseLeftButtonDown"/>
-            <Image Name="GiftButton" Source="../Images/Gift.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="GiftButton_MouseLeftButtonDown"/>
-            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
-            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
-            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
-            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
-            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
-            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
-            <Rectangle Height="30" Width="30" Margin="10,10,10,0"/>
-            <Image Name="ConfigButton" Source="../Images/Config.png" Height="30" Width="30" Margin="10,10,10,0" MouseLeftButtonDown="ConfigButton_MouseLeftButtonDown"/>
-        </StackPanel>
-
-
-        <Border CornerRadius="0,10,10,0" Margin="50,0,0,0">
+        <Border CornerRadius="10,10,10,10">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#202222" Offset="1"/>
                     <GradientStop Color="#12171C" Offset="0"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <StackPanel Name="HeaderStackPanel" VerticalAlignment="Top" HorizontalAlignment="Left" Height="40" Width="750" Orientation="Horizontal">
-                <!--StackPanel.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="#202222" Offset="1"/>
-                    <GradientStop Color="#12171C" Offset="0"/>
-                </LinearGradientBrush>
-            </StackPanel.Background-->
-                <Image Source="../Images/HeaderProfile.png" Width="30" Height="30" Margin="10,0,0,0"/>
-                <TextBlock Text="Welcome, username!" Margin="10,0,0,0" FontSize="16" VerticalAlignment="Center"/>
-                <Image Name="CloseButton" Source="../Images/Close.png" Height="15" Width="15" VerticalAlignment="Center" Margin="530,0,0,0" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown" HorizontalAlignment="Center"/>
-            </StackPanel>
-        </Border>
+            <StackPanel Orientation="Vertical">
 
-        <!-- Submodels -->
-        
-        <StackPanel Name="HomeStackPanel" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="410" Width="750" Margin="50,0,0,0">
-            <ScrollViewer>
-                <StackPanel Orientation="Vertical" Width="90">
-                    <Image Source="../Images/News/New1.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
-                    <Image Source="../Images/News/New2.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
-                    <Image Source="../Images/News/New3.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
-                    <Image Source="../Images/News/New4.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
-                    <Image Source="../Images/News/New5.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
-                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
-                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
-                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
-                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
-                    <Image Source="../Images/News/New6.png" Width="60" Height="60" VerticalAlignment="Center" Margin="0,7,0,0"/>
+                <StackPanel Name="HeaderStackPanel" Height="40" Width="800" Orientation="Horizontal" Background="#242424">
+                    <Image Name="LogoImage" Source="../Images/NeoX.png" Width="30" Height="30" Margin="10,0,0,0"/>
+                    <Image Name="ProfilePicture" Source="../Images/HeaderProfile.png" Width="30" Height="30" Margin="15,0,0,0"/>
+                    <TextBlock Name="WelcomeMessage" Text="Welcome, username!" Margin="10,3,0,0" FontSize="16" VerticalAlignment="Center" FontFamily="Helvetica" FontWeight="Light" />
+                    <TextBlock Name="HomeButton" Text="Home" Margin="370,0,0,0" FontSize="20" VerticalAlignment="Center" Opacity="1" FontFamily="Helvetica" FontWeight="Light" MouseLeftButtonDown="HomeButton_MouseLeftButtonDown"/>
+                    <TextBlock Name="LibraryButton" Text="Library" Margin="30,0,0,0" FontSize="20" VerticalAlignment="Center" Opacity="0.8" FontFamily="Helvetica" FontWeight="Light" MouseLeftButtonDown="LibraryButton_MouseLeftButtonDown"/>
+                    <Image Name="CloseButton" Source="../Images/Close.png" Height="15" Width="15" Margin="20,0,0,0" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown" />
                 </StackPanel>
 
-            </ScrollViewer>
-        </StackPanel>
-        
-        
+                <StackPanel Name="SubModelsStackPanel">
+                    <StackPanel Name="HomeStackPanel" Height="410">
+                        <TextBlock Text="Home" Margin="30,0,0,0" FontSize="20" VerticalAlignment="Center" Opacity="0.8" FontFamily="Helvetica" FontWeight="Light"/>
+                    </StackPanel>
+
+                    <StackPanel Name="LibraryStackPanel" Height="410" Visibility="Collapsed">
+                        <TextBlock Text="Library" Margin="30,0,0,0" FontSize="20" VerticalAlignment="Center" Opacity="0.8" FontFamily="Helvetica" FontWeight="Light"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
